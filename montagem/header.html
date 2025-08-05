@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PBS Advogados</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Exo', sans-serif;
+            margin: 0;
+        }
+        header.site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            background-color: #EAEFF2;
+            border-bottom: 1px solid #ddd;
+            height: 125px;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            height: 125px;
+        }
+        .vertical-line {
+            width: 8px;
+            height: 100%;
+            background-color: #D4B878;
+        }
+        .header-logo {
+            padding: 0 20px;
+        }
+        .header-logo img {
+            max-width: 184.16px;
+            height: auto;
+            object-fit: contain;
+        }
+        .main-navigation {
+            margin-left: 30px;
+        }
+        .main-navigation ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .main-navigation a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+        }
+        .gtranslate-wrapper {
+            margin-right: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            header.site-header {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+            }
+            .main-navigation ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gtranslate-wrapper {
+                margin: 10px 0 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="custom-body-class">
+<div id="page" class="site">
+    <header id="masthead" class="site-header">
+        <div class="header-left">
+            <div class="header-logo">
+                <a href="/">
+                    <img src="http://pbsadvogados.test/wp-content/uploads/2025/08/Camada-1.png" alt="PBS Advogados">
+                </a>
+            </div>
+            <div class="vertical-line"></div>
+
+            <nav id="site-navigation" class="main-navigation">
+                <ul id="primary-menu">
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/sobre">Sobre</a></li>
+                    <li><a href="/equipe">Equipe</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="gtranslate-wrapper">
+            <!-- Simulação do shortcode do GTranslate -->
+            <select onchange="location = this.value;">
+                <option value="/">Português</option>
+                <option value="/en">English</option>
+                <option value="/es">Español</option>
+            </select>
+        </div>
+    </header>
+</div>
+</body>
+</html>
